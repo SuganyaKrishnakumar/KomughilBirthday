@@ -4,7 +4,8 @@ import { Router, Switch, Route } from "react-router-dom";
 import Month from "./Components/Month";
 import Wishes from "./Components/Wishes";
 import welcome from "./Components/Welcome";
-import history from './history'
+import history from './history';
+import Main from "./Components/Main";
 
 export default class Routes extends Component {
     render() {
@@ -13,7 +14,7 @@ export default class Routes extends Component {
                 <Switch>
                     <Route path="/" exact component={welcome} />
                     <Route path="/Wishes" component={Wishes}/>
-                    <Route path="/Month" component={Month} />                    
+                    <Route path="/Month" component={Main} />                    
                     
                 </Switch>
             </Router>
